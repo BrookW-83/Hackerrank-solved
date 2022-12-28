@@ -1,0 +1,11 @@
+num = int(input())
+reminder = num % 2
+if 0 != reminder:
+    print("Wierd")
+else:
+    if (2 <= num <= 5 ):
+        print ("Not Wierd")
+    elif(6 <= num >=20):
+        print("Wierd")
+    elif(num>20):
+        print("Not Wierd")
