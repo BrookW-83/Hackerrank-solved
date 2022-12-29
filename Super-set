@@ -1,0 +1,11 @@
+A = set(map(int, input().split()))
+output = []
+
+for i in range(int(input())):
+    N = set(map(int, input().split()))
+    if not A.issuperset(N):
+        output.append(False)
+    else:
+        output.append(True)
+        
+print(bool(not(False in output)))
