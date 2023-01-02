@@ -1,0 +1,12 @@
+from collections import Counter
+
+n = int(input())
+S = []
+
+for i in range(n):
+    S += [input()]
+S = Counter(S).items()
+print(len(S))
+
+for key, values in S:
+    print(values, end = ' ')
