@@ -1,0 +1,24 @@
+def insertionSort1(n, arr):
+    # Write your code here
+    tmp = arr[-1]
+    index = n - 1
+    
+    while index > 0:
+        if arr[index - 1] > tmp:
+            arr[index] = arr[index -1]
+            index -= 1
+            print(*arr)
+        else:
+            arr[index] = tmp
+            break
+    if arr[0] == arr[1]:
+        arr[0] = tmp
+            
+    print(*arr)
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    insertionSort1(n, arr)
